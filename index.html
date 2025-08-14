@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yumi's Corner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">Yumi's Corner</div>
+            <ul class="menu">
+                <li><a href="about.html">關於我</a></li>
+
+                <!-- 作品：下拉 -->
+                <li class="has-sub">
+                    <a href="#" class="nav-parent">作品</a>
+                    <ul class="submenu">
+                        <li><a href="projects/game.html">遊戲</a></li>
+                        <li><a href="projects/video.html">影片</a></li>
+                        <li><a href="projects/music.html">音樂</a></li>
+                    </ul>
+                </li>
+                <li><a href="interact.html" aria-current="page">棉花糖投擲區</a></li>
+
+                <!-- 社群：下拉 -->
+                <li class="has-sub">
+                    <a href="#" class="nav-parent">社群</a>
+                    <ul class="submenu">
+                        <li><a href="https://x.com/Yuumi_0508_Uchu" target="_blank" rel="noopener">X</a></li>
+                        <li><a href="https://youtube.com/@yuumi4429" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://twitch.tv/yuwumi_chan" target="_blank" rel="noopener">Twitch</a></li>
+                        <li><a href="https://instagram.com/yumicherub" target="_blank" rel="noopener">Instagram</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="layout">
+        <section id="fortune" class="cards-row">
+            <div class="card fortune-card">
+                <h2>今天的運氣怎麼樣呢~</h2>
+                <p id="result" aria-live="polite">點一下抽今日運勢！</p>
+                <button id="drawBtn">抽籤</button>
+            </div>
+
+            <div class="card fortune-note" id="noteCard" hidden>
+                <h2>小提醒</h2>
+                <p id="noteText">只是機率而已！沒抽到好籤不要難過！</p>
+            </div>
+        </section>
+
+        <!-- 作品：單欄，但用同樣的容器寬度規則 -->
+        <section id="projects" class="cards-row single">
+            <div class="card section-card">
+                <h2>作品</h2>
+
+                <div class="tiles-grid">
+                    <a class="tile" href="projects/game.html" aria-label="遊戲作品">
+                        <div class="icon">🎮</div>
+                        <div class="title">遊戲</div>
+                    </a>
+
+                    <a class="tile" href="projects/video.html" aria-label="影片作品">
+                        <div class="icon">🎬</div>
+                        <div class="title">影片</div>
+                    </a>
+
+                    <a class="tile" href="projects/music.html" aria-label="音樂作品">
+                        <div class="icon">🎵</div>
+                        <div class="title">音樂</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <aside class="sidebar">
+            <div class="card profile-card">
+                <img src="images/profile.png" alt="個人頭像" class="profile-img">
+
+                <!-- 名字三語 -->
+                <h3 class="profile-name">遊未 / Yuumi / ゆうみ</h3>
+
+                <!-- 標語粗體 -->
+                <p class="profile-tagline">
+                    <strong>未来を征する遊戯！まだ見ぬ明日へ！</strong>
+                </p>
+
+                <!-- 按鈕 -->
+                <button onclick="location.href='about.html'">看更多</button>
+            </div>
+        </aside>
+
+        <section id="interact" class="cards-row single">
+            <div class="card section-card">
+                <h2>向我投擲棉花糖！</h2>
+
+                <p style="color:#555;margin:6px 0 14px;">
+                    想跟我說什麼、或是想丟點建議？歡迎用棉花糖留言 💌
+                </p>
+                <div class="button-group">
+                    <button class="btn-pink" onclick="location.href='https://marshmallow-qa.com/npna1soplcel5ji'">
+                        我要丟棉花糖！
+                    </button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- 聯絡方式：單欄，同容器 -->
+        <section id="contact">
+            <div class="card section-card">
+                <h2>社群</h2>
+                <div class="social-links">
+                    <!-- X -->
+                    <a href="https://x.com/@Yuumi_0508_Uchu" target="_blank" rel="noopener" class="x"
+                        aria-label="X (Twitter)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2H21.556L14.58 10.068L22.84 22H16.14L10.8 14.498L4.706 22H1.394L8.92 13.316L1 2H7.868L12.684 8.852L18.244 2ZM17.084 19.978H18.933L6.976 4.078H5.002L17.084 19.978Z" />
+                        </svg>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="https://youtube.com/@yuumi4429" target="_blank" rel="noopener" class="youtube"
+                        aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M23.498 6.186a2.993 2.993 0 0 0-2.107-2.12C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.391.566a2.993 2.993 0 0 0-2.107 2.12C0 8.095 0 12 0 12s0 3.905.502 5.814a2.993 2.993 0 0 0 2.107 2.12C4.495 20.5 12 20.5 12 20.5s7.505 0 9.391-.566a2.993 2.993 0 0 0 2.107-2.12C24 15.905 24 12 24 12s0-3.905-.502-5.814ZM9.75 15.568V8.432L15.818 12 9.75 15.568Z" />
+                        </svg>
+                    </a>
+
+                    <!-- Twitch -->
+                    <a href="https://twitch.tv/yuwumi_chan" target="_blank" rel="noopener" class="twitch"
+                        aria-label="Twitch">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                            <path d="M4 2L2 6v14h6v2h4l2-2h4l4-4V2H4zm16 12l-2 2h-5.172L12 18.828V16H6V4h14v10z" />
+                            <path d="M14 6h2v5h-2zm-4 0h2v5H10z" />
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/yumicherub" target="_blank" rel="noopener" class="instagram"
+                        aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm4.25 4a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5Zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Zm5.75-.875a1.125 1.125 0 1 1 0 2.25 1.125 1.125 0 0 1 0-2.25Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

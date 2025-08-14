@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yumi的影片角落</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="game-page">
+  <!-- ✅ Header 滿版 + 內層置中 -->
+  <header class="site-header full-bleed">
+    <nav class="nav-inner">
+      <div class="logo">Yumi's Corner</div>
+      <ul class="menu">
+        <li><a href="../index.html">首頁</a></li> <!-- ✅ 從子資料夾連回首頁要 ../ -->
+        <li><a href="../about.html">關於我</a></li>
+        <li class="has-sub">
+          <a href="#" class="nav-parent">作品</a>
+          <ul class="submenu">
+            <li><a href="game.html">遊戲</a></li>
+            <li><a href="video.html">影片</a></li>
+            <li><a href="music.html">音樂</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../interact.html" aria-current="page">棉花糖投擲區</a></li>
+        <li class="has-sub">
+          <a href="#" class="nav-parent">社群</a>
+          <ul class="submenu">
+            <li><a href="https://x.com/Yuumi_0508_Uchu" target="_blank" rel="noopener">X</a></li>
+            <li><a href="https://youtube.com/@yuumi4429" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://twitch.tv/yuwumi_chan" target="_blank" rel="noopener">Twitch</a></li>
+            <li><a href="https://instagram.com/yumicherub" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <h1>Yumi的音樂角落</h1>
+
+    <section class="card vcat">
+      <header class="vhead">
+        <h2>隨便唱唱專區</h2>
+        <a class="view-all" href="#" aria-disabled="true">查看全部</a>
+      </header>
+
+      <div class="yt-grid">
+        <!-- 每個 data-yt 放 YouTube 影片ID，縮圖自動顯示 -->
+        <button class="yt-tile" data-url="https://youtu.be/kIx1jc3wyJQ">
+          <img class="thumb" alt="夢ファンファーレ" />
+          <span class="dur">04:13</span>
+        </button>
+
+        <button class="yt-tile" data-url="https://youtu.be/kL-6OSObu1Y">
+          <img class="thumb" alt="パーフェクト生命" />
+          <span class="dur">03:05</span>
+        </button>
+
+        <button class="yt-tile" data-url="https://youtu.be/5-BcAVi2ln4">
+          <img class="thumb" alt="サマータイムレコード" />
+          <span class="dur">04:26</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="card vcat">
+      <header class="vhead">
+        <h2>隨便彈彈專區</h2>
+        <a class="view-all" href="#" aria-disabled="true">查看全部</a>
+      </header>
+
+      <div class="yt-grid">
+        <button class="yt-tile" data-url="https://youtu.be/jEFhoqUvl_M"><img class="thumb" alt="Untutled"/><span
+            class="dur">02:53</span></button>
+      </div>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

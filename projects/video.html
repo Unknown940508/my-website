@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yumi的影片角落</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="game-page">
+  <!-- ✅ Header 滿版 + 內層置中 -->
+  <header class="site-header full-bleed">
+    <nav class="nav-inner">
+      <div class="logo">Yumi's Corner</div>
+      <ul class="menu">
+        <li><a href="../index.html">首頁</a></li> <!-- ✅ 從子資料夾連回首頁要 ../ -->
+        <li><a href="../about.html">關於我</a></li>
+        <li class="has-sub">
+          <a href="#" class="nav-parent">作品</a>
+          <ul class="submenu">
+            <li><a href="game.html">遊戲</a></li>
+            <li><a href="video.html">影片</a></li>
+            <li><a href="music.html">音樂</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../interact.html" aria-current="page">棉花糖投擲區</a></li>
+        <li class="has-sub">
+          <a href="#" class="nav-parent">社群</a>
+          <ul class="submenu">
+            <li><a href="https://x.com/Yuumi_0508_Uchu" target="_blank" rel="noopener">X</a></li>
+            <li><a href="https://youtube.com/@yuumi4429" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://twitch.tv/yuwumi_chan" target="_blank" rel="noopener">Twitch</a></li>
+            <li><a href="https://instagram.com/yumicherub" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <h1>Yumi的影片角落</h1>
+
+    <!-- 分類 1：正顎手術專區 -->
+    <section class="card vcat">
+      <header class="vhead">
+        <h2>正顎手術專區</h2>
+        <!-- 之後可改成連到完整清單頁 ex: jaw-surgery.html -->
+        <a class="view-all" href="#" aria-disabled="true">查看全部</a>
+      </header>
+
+      <div class="yt-grid">
+        <!-- 每個 data-yt 放 YouTube 影片ID，縮圖自動顯示 -->
+        <button class="yt-tile" data-yt="9yKa7VWatq4">
+          <img class="thumb" alt="正顎影片 A" />
+          <span class="dur">11:26</span>
+        </button>
+
+        <button class="yt-tile" data-yt="H1so9S7wPnU">
+          <img class="thumb" alt="正顎影片 B" />
+          <span class="dur">16:30</span>
+        </button>
+
+        <button class="yt-tile" data-yt="DFJcqzJShME">
+          <img class="thumb" alt="正顎影片 C" />
+          <span class="dur">09:52</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 分類 2：舞蹈翻跳專區（至少 10 部，這裡先放 6 部預覽） -->
+    <section class="card vcat">
+      <header class="vhead">
+        <h2>舞蹈翻跳專區</h2>
+        <a class="view-all" href="#" aria-disabled="true">查看全部</a>
+      </header>
+
+      <div class="yt-grid">
+        <button class="yt-tile" data-yt="CnnFUrXTqTA"><img class="thumb" alt="Beyond the Way" /><span
+            class="dur">01:57</span></button>
+        <button class="yt-tile" data-yt="vW-nh_c0-yM"><img class="thumb" alt="Absolute Perfection" /><span
+            class="dur">02:37</span></button>
+        <button class="yt-tile" data-yt="B61GXFtFZ2Y"><img class="thumb" alt="樓外樓" /><span
+            class="dur">03:28</span></button>
+        <button class="yt-tile" data-yt="hk_OeIP_q2E"><img class="thumb" alt="Turbulent Storm" /><span
+            class="dur">02:24</span></button>
+        <button class="yt-tile" data-yt="qWfoMUA3WAA"><img class="thumb" alt="Eccentric Paarty Night!!" /><span
+            class="dur">02:18</span></button>
+        <button class="yt-tile" data-yt="3jFgVcchaJA"><img class="thumb" alt="Ruby Love" /><span
+            class="dur">02:35</span></button>
+      </div>
+    </section>
+
+    <!-- 分類 3：舞蹈翻跳短片（Shorts，至少 10，預覽 6） -->
+    <section class="card vcat">
+      <header class="vhead">
+        <h2>舞蹈翻跳短片</h2>
+        <a class="view-all" href="#" aria-disabled="true">查看全部</a>
+      </header>
+
+      <div class="yt-grid">
+        <!-- Shorts 也能用同樣方式；需要直式縮圖可之後再換 -->
+        <button class="yt-tile" data-url="https://youtube.com/shorts/DjBdRCNCjMI?feature=share"><img class="thumb" alt="blender" /><span
+            class="dur">0:22</span></button>
+        <button class="yt-tile" data-url="https://youtube.com/shorts/O-CkMKegEKs?feature=share"><img class="thumb" alt="LOCK YOUR GAZE" /><span
+            class="dur">0:15</span></button>
+        <button class="yt-tile" data-url="https://youtube.com/shorts/6zgXk87_kog?feature=share"><img class="thumb" alt="Sanctuary" /><span
+            class="dur">0:35</span></button>
+        <button class="yt-tile" data-url="https://youtube.com/shorts/h7Q-Wf6laSg?feature=share"><img class="thumb" alt="Mystic Fragrance" /><span
+            class="dur">0:32</span></button>
+        <button class="yt-tile" data-url="https://youtube.com/shorts/MBfCfHn_gho?feature=share"><img class="thumb" alt="Honeycomb Summer" /><span
+            class="dur">0:33</span></button>
+        <button class="yt-tile" data-url="https://youtube.com/shorts/ySnbxqYjN6o?feature=share"><img class="thumb" alt="来来☆2winkイリュージョン" /><span
+            class="dur">0:21</span></button>
+      </div>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>互動 | Yumi's Corner</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="game-page"><!-- reuse：取消右側欄預留空白，如不需要可移除 game-page -->
+    <!-- 頁首（沿用你的滿版 header） -->
+    <header class="site-header full-bleed">
+        <nav class="nav-inner">
+            <div class="logo">Yumi's Corner</div>
+            <ul class="menu">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我</a></li>
+                <li class="has-sub">
+                    <a href="#" class="nav-parent">作品</a>
+                    <ul class="submenu">
+                        <li><a href="projects/game.html">遊戲</a></li>
+                        <li><a href="projects/video.html">影片</a></li>
+                        <li><a href="projects/music.html">音樂</a></li>
+                    </ul>
+                </li>
+                <li><a href="interact.html" aria-current="page">棉花糖投擲區</a></li>
+                <li class="has-sub">
+                    <a href="#" class="nav-parent">社群</a>
+                    <ul class="submenu">
+                        <li><a href="https://x.com/Yuumi_0508_Uchu" target="_blank" rel="noopener">X</a></li>
+                        <li><a href="https://youtube.com/@yuumi4429" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://twitch.tv/yuwumi_chan" target="_blank" rel="noopener">Twitch</a></li>
+                        <li><a href="https://instagram.com/yumicherub" target="_blank" rel="noopener">Instagram</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="layout">
+        <h1>棉花糖投擲區</h1>
+
+        <!-- 入口卡：丟棉花糖 -->
+        <section class="card centered">
+            <h2>匿名提問（棉花糖）</h2>
+            <p style="color:#555;margin:6px 0 14px;">
+                想跟我說什麼、或是想丟點建議？歡迎用棉花糖留言 💌
+            </p>
+            <div class="button-group">
+                <button class="btn-pink" onclick="location.href='https://marshmallow-qa.com/npna1soplcel5ji'">
+                    我要丟棉花糖！
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Q&A 列表 -->
+        <section class="card">
+            <h2>已回覆的棉花糖</h2>
+            <div class="qa-list">
+
+                <!-- 單一題：用 details/summary 可無 JS 折疊 -->
+                <details class="qa-item">
+                    <summary class="qa-q">最近在做什麼？</summary>
+                    <div class="qa-a">
+                        當個打工人！
+                    </div>
+                </details>
+
+                <details class="qa-item">
+                    <summary class="qa-q">為什麼要開台？</summary>
+                    <div class="qa-a">
+                        好問題，我也不知道，想記錄打遊戲畫面吧
+                    </div>
+                </details>
+
+                <!-- 之後要新增 Q&A，複製上面一組 details 即可 -->
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
