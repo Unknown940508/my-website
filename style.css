@@ -85,6 +85,11 @@ header{
 }
 .nav-inner{ max-width: var(--page-max); margin: 0 auto; padding: 12px 16px; display:flex; align-items:center; justify-content:space-between; }
 
+.site-top{
+   position: sticky; top: 0; z-index: 3000;
+   background: #ffffffcc; backdrop-filter: blur(6px);
+}
+
 /* =========================
    主內容
 ========================= */
@@ -298,3 +303,4 @@ h1, h2, h3, .section-title, .vhead{ position: static !important; top: auto !impo
 .button-group .btn-pink:first-child:hover {
   background-color: #ec4899;
 }
+
